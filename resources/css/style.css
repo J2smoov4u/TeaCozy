@@ -18,7 +18,7 @@ header {
 .logo {
   display: flex;
   width: 50%;
-  margin: 10px;
+  margin-left: 10px;
 }
 
 .logo img {
@@ -36,4 +36,11 @@ header {
 .nav span a {
   color: white;
   padding: 20px 20px;
+}
+/*Main content*/
+.main {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+  display: flex;
+  height: 700px;
+  width: 1200px;
 }
