@@ -1,4 +1,4 @@
-body {
+html {
   font-family: Helvetica;
   font-family: 22px;
   color: seashell;
@@ -14,6 +14,7 @@ header {
   width: 100%;
   border-bottom: 1px solid seashell;
   z-index: 1;
+  background-color: black;
 }
 
 .logo {
@@ -40,23 +41,25 @@ header {
 }
 /*Main content*/
 .main {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
   display: flex;
-  height: 700px;
-  width: 1200px;
-  /*justify-content: center;
-  align-items: center;*/
+  justify-content: center;
+  
 }
 
-.main .text-content {
-  justfy-content: center;
+#mission {
+  height: 700px;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+  width: 1200px;
+  margin-top: 70px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  color: white;
-  background-color: black;
 }
 
 .text-content {
-  z-index: 1;
-  height: 50px;
+  background-color: black;
   width: 100%;
 }
