@@ -6,6 +6,16 @@ html {
   opacity: 0.9;
   text-align: center;
 }
+div {
+  display: block;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 /*Header*/
 header {
   display: flex;
@@ -41,11 +51,14 @@ header {
 }
 /*Main content*/
 .main {
-  display: flex;
-  justify-content: center;
-  
+  padding-top: 69px;
+  opacity: 0.9;
+  width: 1200px;
+  margin:auto;
+  /*display: flex;
+  justify-content: center*/
 }
-
+/*Mission styles*/
 #mission {
   height: 700px;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
@@ -53,13 +66,33 @@ header {
   margin-top: 70px;
 }
 
-.flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .text-content {
   background-color: black;
   width: 100%;
+}
+
+/*Featured-Tea styles*/
+#items {
+  display: flex;
+  width: 1000px;
+  height: 700px;
+}
+
+#store {
+  display: flex;
+  /*flex-wrap: wrap;
+  justify-content: center;*/
+  height: 700px;
+  width: 1000px;
+  margin: auto;
+  padding-top: 70px;
+}
+
+
+.item img {
+  display: inline-flex;
+  justify-content:center;
+  align-content: space-around;
+  height: 200px;
+  width: 300px;
 }
