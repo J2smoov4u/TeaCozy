@@ -6,14 +6,23 @@ html {
   opacity: 0.9;
   text-align: center;
 }
+html,
+  body {
+    height:99%;
+}
+body {
+  display: flex;
+}
 div {
   display: block;
 }
-.flex-container {
+
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 1200px;
 }
 
 /*Header*/
@@ -25,6 +34,7 @@ header {
   border-bottom: 1px solid seashell;
   z-index: 1;
   background-color: black;
+  margin-top: 0;
 }
 
 .logo {
@@ -51,6 +61,7 @@ header {
 }
 /*Main content*/
 .main {
+
   padding-top: 69px;
   opacity: 0.9;
   width: 1200px;
@@ -72,27 +83,51 @@ header {
 }
 
 /*Featured-Tea styles*/
-#items {
+div #store {
   display: flex;
+  flex-direction: column;
   width: 1000px;
-  height: 700px;
 }
-
-#store {
+div #items {
   display: flex;
-  /*flex-wrap: wrap;
-  justify-content: center;*/
-  height: 700px;
-  width: 1000px;
-  margin: auto;
-  padding-top: 70px;
+  flex: column wrap;
+
 }
-
-
-.item img {
-  display: inline-flex;
-  justify-content:center;
-  align-content: space-around;
-  height: 200px;
+img {
   width: 300px;
+  height: 200px;
+}
+#items .container {
+  display: flex;
+  flex: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+}
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: space-around;
+  margin: 20px;
+  width: 1000px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  /*width: 200px*/
+  min-height: 200px;
+  padding: 5px;
+  margin: 10px;
+  flex: 0 1 300px;
+}
+
+.box span {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 10px;
+
 }
